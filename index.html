@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Landing Page</title>
+    <!--styles-->
+    <link rel="stylesheet" href="style.css" />
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <header id="header">
+      <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img id="header-img" class="navLogo" src="styles/images/cppLogo.svg"/>
+        </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#biking">Biking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#affiliates">Affilates</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+      <div class="formContainer container">
+        <h2>Let's get in touch!</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+          <input name="email" id="email" type="email" placeholder="email address" required/>
+          <input id="submit" class="btn" type="submit" value="Submit"/>
+        </form>
+      </div>
+      <div id="about" class="about container">
+        <p>
+          &nbsp; &nbsp; Cycle Path & Paddle opened Memorial Day weekend 2005
+          in a renovated tire garage from the mining era. Owner
+          Jenny Smith decided to "take a flying leap" of faith and
+          open a store that promoted her passion for Outdoor Fun!
+          The first 5 mile segment of the Cuyuna Lakes State Trail,
+          through the Cuyuna Country State Recreation Area, was formally
+          dedicated later that summer. The store started out with primarily
+          hybrid and comfort bikes, kayaks and canoes. The first few years
+          were a struggle and Jenny tried a variety of different approaches
+          to grow the business, including opening a branch store in Pequot Lakes
+          in 2008 to cater to the large resorts in the area. That lasted one year-
+          live and learn!
+        </p>
+      </div>
+      <div id="biking" class="vidContainer container">
+        <iframe id="video" width="560" height="315"
+          src="https://www.youtube.com/embed/7DOvDS1PD0o"
+          frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div id="affiliates" class="imgContainer container">
+        <img src="styles/images/dnr.jpg" />
+        <img src="styles/images/lakesProud.png" />
+        <img src="styles/images/imba_black_logo.png" />
+      </div>
+      <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
